@@ -3,15 +3,19 @@ process.stdin.setEncoding('utf8');
 // DECLARAÇÃO DE VARIAVEIS
 let player_EXP = 0;
 let player_NAME = "";
-const  readline = require('readline-sync');
+//player_EXP = 800;
+//player_NAME = "Robert";
+// comente as linhas marcadas com //INPUT para continuar sem o readlines
+// e remova os comentarios das variaveis anteriores ( player_EXP, player_NAME )
+const  readline = require('readline-sync'); //INPUT
 const LEVELS = ["Ferro", "Bronze", "Prata", "Ouro", "Platina diamante", "Ascendente", "Imortal", "Radiante"]
 const LEVELS_XP = ["1000", "1001-2000", "2001-5000", "6001-7000", "7001-8000", "8001-9000", "9001-10000", "10001"]
 
 // PEGAR DO USUARIO O NOME, E XP DO HERÓI
-player_NAME = readline.question("Qual o nome do seu Heroi? ~: ");
+player_NAME = readline.question("Qual o nome do seu Heroi? ~: "); //INPUT
 while ( player_EXP == 0 || player_EXP == "info"){
     player_EXP = readline.question("Qual a quantidade de XP que seu Heroi vai possuir?"+
-                            "(Escreva 'info' para ver as classes) ~: ");
+                            "(Escreva 'info' para ver as classes) ~: "); //INPUT
 
     // SE: ESCOLHER INFORMAÇÕES
     if ( player_EXP != "info"){
