@@ -10,9 +10,9 @@ Dica: Se o expert forneceu um repositório Github, você pode dar um "fork" no r
 
 Pacote requirido: readline-sync
 
-'''
+```console
 npm i readline-sync
-'''
+```
  
 Instruções para entrega
 ### 1️⃣ Desafio Classificador de nível de Herói
